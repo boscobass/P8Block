@@ -1,0 +1,15 @@
+{
+    "name": "boscobass/p8chain",
+    "authors": [
+        {
+            "name": "Bosco Barros",
+            "email": "byboscobass@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "P8Block\\": "core/"
+        }
+    }
+}
