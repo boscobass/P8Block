@@ -21,17 +21,36 @@
 namespace P8Block\Entities;
 
 use P8Block\Interfaces\BlockInterface;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="blocks")
+ */
 
 class Block implements BlockInterface {
     
     const HASH_TYPE = 'sha256';
     
-    private string $lastHash;
-    
-    private int $timestamp;
-    
+    /** 
+     * @ORM\Id
+     * @ORM\Column(type="string")
+     */
     private string $hash;
     
+    /** 
+     * @ORM\Column(type="string") 
+     */
+    private string $lastHash;
+    
+    /** 
+     * @ORM\Column(type="integer") 
+     */
+    private int $timestamp;
+    
+    /** 
+     * @ORM\Column(type="string") 
+     */
     private string $data;
     
     /**

@@ -6,10 +6,15 @@
             "email": "byboscobass@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "doctrine/orm": "^2.6.2",
+        "doctrine/migrations": "^2.0",
+        "symfony/yaml": "2.*"
+    },
     "autoload": {
         "psr-4": {
             "P8Block\\": "core/"
-        }
+        },
+        "psr-0": {"": "core/"}
     }
 }
